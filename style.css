@@ -29,7 +29,7 @@ body {
 
 .menu-container {
   max-width: 200px;
-  margin: auto;
+  margin-left: 36px;
 }
 
 .color-container {
@@ -38,6 +38,14 @@ body {
   border-radius: 50px;
   overflow: hidden;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  margin-top: 36px;
+}
+
+.rgb,
+.clear,
+.btn-grid-activate,
+.slider {
+  margin-top: 48px;
 }
 
 .r {
@@ -105,4 +113,26 @@ body {
 
 .fa-brands:hover {
   color: #04AA6D !important;
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .grid {
+    height: 350px;
+    width: 350px;
+  }
+
+  .menu-container {
+    margin: auto;
+  }
+
+  .rgb,
+  .clear,
+  .btn-grid-activate,
+  .slider {
+    margin-top: 24px;
+  }
 }
