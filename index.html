@@ -4,42 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- CSS only -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+
+  <script src="https://kit.fontawesome.com/07332edd91.js" crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js" defer></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/07332edd91.js" crossorigin="anonymous"></script>
 
   <title>Document</title>
 </head>
 <body>
 
-  <h1 class="text-center mt-5">Etchy!</h1>
-  
-  <div class="container p-5">
-    <div class="row text-center">
+  <section>
+    <h1 class="title text-center mt-5">Etch-a-Sketch</h1>
+    
+    <div class="container p-5">
+      <div class="row text-center">
 
-      <div class="col p-0 my-5 cont">
-        <div class="etch m-auto">
-          <!-- Make divs here using JS -->
+        <div class="col p-0 my-5 cont">
+          <div class="grid bg-body rounded m-auto">
+            <!-- Make divs here using JS -->
+          </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 my-5">
-        <div class="slide-container my-5">
-          <input type="range" min="1" max="64" value="4" class="slider">
-          <div class="text"></div>
+
+        <div class="col-lg-4 my-5">
+
+          <div class="menu-container mb-5">
+
+            <div class="color-container mt-4 mx-auto"><input type="color" name="color" id="color" value="#000000"></div>
+
+            <a class="btn btn-outline-dark rgb my-5" role="button"><span class="r">R</span><span class="g">G</span><span class="b">B</span> On</a>
+
+            <a class="btn btn-outline-dark clear mb-5" role="button">Clear Grid</a>
+
+            <a class="btn btn-outline-dark btn-grid-activate mb-5" role="button">Toggle Gridlines</a>
+
+            <input type="range" min="1" max="64" value="16" class="slider">
+            <div class="slider-text"></div>
+
+          </div>
+
         </div>
+    
       </div>
+    </div>
+  </section>
 
-      
+  <footer>
+    <div class="text-center mb-5">
+      <p>
+        &#169; 2022 Paulo Victorio&nbsp;
+        <a href="https://github.com/pauvictorio" target="_blank"><i class="fa-brands fa-github fa-lg text-dark mt-4"></i></a>
+      </p>
       
     </div>
-  </div>
-
-
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
-  <script src="script.js" defer></script>
+  </footer>
+  
 </body>
 </html>
